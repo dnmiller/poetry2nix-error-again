@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my_project"
+version = "0.1.0"
+description = "Minimal example for a bug report"
+authors = ["Some guy"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dummy-python-library-with-poetry = {git = "git@github.com:dnmiller/dummy-python-library-with-poetry.git", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
